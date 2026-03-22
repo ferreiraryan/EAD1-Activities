@@ -1,14 +1,16 @@
+
+
 #include <stdio.h>
 int main() {
-  int num, invertido = 0, resto;
-  scanf("%d", &num);
+  int i = 0;
+  int j = 0;
 
-  while (num != 0) {
-    resto = num % 10;
-    invertido = invertido * 10 + resto;
-    num /= 10;
+  scanf("%d", &i);
+  scanf("%d", &j);
+
+  if (i > j) {
+    printf("%d", i);
+  } else {
+    printf("%d", j);
   }
-
-  printf("%i", invertido);
-  return 0;
 }

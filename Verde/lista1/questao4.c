@@ -1,9 +1,16 @@
 #include <stdio.h>
-int main(void) {
-  float raio = 0;
-  scanf("%f", &raio);
-  printf("Perímetro: %.2f\n", raio * (3.14159 * 2));
-  printf("Área: %.2f", 3.14159 * (raio * raio));
+int main() {
+  int nota = 0;
 
-  return 0;
+  scanf("%d", &nota);
+
+  if (nota >= 8) {
+    printf("Ótimo");
+  } else if (nota >= 7) {
+    printf("Bom");
+  } else if (nota >= 5) {
+    printf("Regular");
+  } else {
+    printf("Instatisfatorio");
+  }
 }

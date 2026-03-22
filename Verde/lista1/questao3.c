@@ -1,21 +1,22 @@
-#include <math.h>
 #include <stdio.h>
-
 int main() {
-  float base, altura;
-  float perimetro, area, diagonal;
+  int ano = 0, idade = 0;
+  char texto;
 
-  scanf("%f", &base);
+  scanf("%d", &ano);
 
-  scanf("%f", &altura);
+  scanf(" %c", &texto);
 
-  perimetro = 2 * (base + altura);
-  area = base * altura;
-  diagonal = sqrt(pow(base, 2) + pow(altura, 2));
+  if (texto == 'S') {
+    idade = 2026 - ano;
+  } else {
+    idade = 2025 - ano;
+  }
+  printf("%d\n", idade);
 
-  printf("Perímetro: %.2f\n", perimetro);
-  printf("Área: %.2f\n", area);
-  printf("Diagonal: %.2f\n", diagonal);
-
-  return 0;
+  if (idade > 18) {
+    printf("Pode dirigir");
+  } else {
+    printf("Nao pode dirigir");
+  }
 }
