@@ -13,8 +13,8 @@ int main() {
   } else {
     diferenca = normal_50_ocupacao - desconto_80_ocupado;
   }
-  printf("%.2f\n", diaria_desconto);
-  printf("%.2f\n", desconto_80_ocupado);
-  printf("%.2f\n", normal_50_ocupacao);
-  printf("%.2f\n", diferenca);
+  printf("Valor promocional: %.2f\n", diaria_desconto);
+  printf("Promocional com 80%% ocupado: %.2f\n", desconto_80_ocupado);
+  printf("Normal com 50%% ocupado: %.2f\n", normal_50_ocupacao);
+  printf("Diferenca entre os valores: %.2f\n", diferenca);
 }

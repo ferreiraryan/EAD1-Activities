@@ -4,13 +4,13 @@ int main() {
 
   scanf("%d", &nota);
 
-  if (nota >= 8) {
-    printf("Ótimo");
+  if (nota >= 8 && nota <= 10) {
+    printf("Otimo");
   } else if (nota >= 7) {
     printf("Bom");
   } else if (nota >= 5) {
     printf("Regular");
-  } else {
-    printf("Instatisfatorio");
+  } else if (nota < 5) {
+    printf("Insatisfatorio");
   }
 }
