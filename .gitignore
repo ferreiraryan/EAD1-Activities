@@ -3,6 +3,9 @@
 #--------------------------------------------------#
 # Gitignore for the following technologies: C
 
+*.txt
+
+
 # Ignore all
 *
 
